@@ -2,21 +2,21 @@
 
 	'use strict';
 
-	var mobileMenuOutsideClick = function() {
+	// var mobileMenuOutsideClick = function() {
 
-		$(document).click(function (e) {
-	    var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
+	// 	$(document).click(function (e) {
+	//     var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
+	//     if (!container.is(e.target) && container.has(e.target).length === 0) {
 
-	    	if ( $('body').hasClass('offcanvas') ) {
+	//     	if ( $('body').hasClass('offcanvas') ) {
 
-    			$('body').removeClass('offcanvas');
-    			$('.js-fh5co-nav-toggle').removeClass('active');
-	    	}
-	    }
-		});
+ //    			$('body').removeClass('offcanvas');
+ //    			$('.js-fh5co-nav-toggle').removeClass('active');
+	//     	}
+	//     }
+	// 	});
 
-	};
+	// };
 
 
 	var offcanvasMenu = function() {
@@ -34,21 +34,21 @@
 			.removeClass('has-dropdown');
 
 		// Hover dropdown menu on mobile
-		$('.offcanvas-has-dropdown').mouseenter(function(){
-			var $this = $(this);
+		// $('.offcanvas-has-dropdown').mouseenter(function(){
+		// 	var $this = $(this);
 
-			$this
-				.addClass('active')
-				.find('ul')
-				.slideDown(500, 'easeOutExpo');
-		}).mouseleave(function(){
+		// 	$this
+		// 		.addClass('active')
+		// 		.find('ul')
+		// 		.slideDown(500, 'easeOutExpo');
+		// }).mouseleave(function(){
 
-			var $this = $(this);
-			$this
-				.removeClass('active')
-				.find('ul')
-				.slideUp(500, 'easeOutExpo');
-		});
+		// 	var $this = $(this);
+		// 	$this
+		// 		.removeClass('active')
+		// 		.find('ul')
+		// 		.slideUp(500, 'easeOutExpo');
+		// });
 
 
 		$(window).resize(function(){
@@ -141,19 +141,19 @@
 	};
 
 
-	var testimonialCarousel = function(){
-		var owl = $('.owl-carousel-fullwidth');
-		owl.owlCarousel({
-			items: 1,
-			loop: true,
-			margin: 0,
-			responsiveClass: true,
-			nav: false,
-			dots: true,
-			smartSpeed: 800,
-			autoHeight: true,
-		});
-	};
+	// var testimonialCarousel = function(){
+	// 	var owl = $('.owl-carousel-fullwidth');
+	// 	owl.owlCarousel({
+	// 		items: 1,
+	// 		loop: true,
+	// 		margin: 0,
+	// 		responsiveClass: true,
+	// 		nav: false,
+	// 		dots: true,
+	// 		smartSpeed: 800,
+	// 		autoHeight: true,
+	// 	});
+	// };
 
 
 	var goToTop = function() {
@@ -209,19 +209,19 @@
 	};
 
 	// Parallax
-	var parallax = function() {
-		$(window).stellar();
-	};
+	// var parallax = function() {
+	// 	$(window).stellar();
+	// };
 
 
 	$(function(){
-		mobileMenuOutsideClick();
-		parallax();
-		offcanvasMenu();
-		burgerMenu();
+		// mobileMenuOutsideClick();
+		// parallax();
+		// offcanvasMenu();
+		// burgerMenu();
 		contentWayPoint();
-		dropdown();
-		testimonialCarousel();
+		// dropdown();
+		// testimonialCarousel();
 		goToTop();
 		loaderPage();
 		counter();
@@ -237,7 +237,8 @@
 	  centerMode: true,
 	  centerPadding: '60px',
 	  variableWidth: true,
-	  //autoplay: true,
+	  lazyLoad: 'ondemand',
+	  autoplay: true,
 	  cssEase: 'linear',
 	  responsive: [
 	    {
@@ -252,10 +253,27 @@
 	  			adaptiveHeight: true,
 	      }
 	    }
-	    // You can unslick at a given breakpoint now by adding:
-	    // settings: "unslick"
-	    // instead of a settings object
 	  ]
 	});
+	$('.slick-slider-wishes').slick({
+		dots: true,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 1,
+	  lazyLoad: 'ondemand',
+	  autoplay: true,
+	  cssEase: 'linear',
+	  responsive: [
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	      }
+	    }
+	  ]
+	});
+
+	$('.venobox').venobox();
 
 }());

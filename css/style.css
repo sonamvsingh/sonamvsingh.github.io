@@ -1954,13 +1954,23 @@ form label {
   color: #F14E95 !important;
 }
 @media screen and (min-width: 500px) {
-  div.slick-active {
+  #fh5co-gallery div.slick-active {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 8px solid #fff !important;
   }
 }
 .footer-inner-wrapper {
   text-shadow: 2px 2px #000000d1
+}
+.icon-location-pin {
+  font-size: 40px !important;
+}
+.engagement-img {
+  width: 100%;
+  height: -webkit-fill-available;
+}
+#fh5co-services .col-md-12 {
+  height: auto !important;
 }
 
 /*# sourceMappingURL=style.css.map */
