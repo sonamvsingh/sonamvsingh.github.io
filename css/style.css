@@ -1072,6 +1072,9 @@ form label {
   width: 50%;
   float: left;
 }
+.couple-half img {
+  border: 1px solid #f14e9559;
+}
 @media screen and (max-width: 768px) {
   .couple-half {
     width: 100%;
@@ -1925,6 +1928,15 @@ form label {
     background-size: contain;
     height: 320px;
   }
+  .slider_item.big {
+    width: 100%;
+    height: auto;
+  }
+  .slider_item.big img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #fff !important;
+  }
 }
 .slick-prev:before {
   color: #F14E95 !important;
@@ -1935,9 +1947,14 @@ form label {
 .slick-dots li.slick-active button:before {
   color: #F14E95 !important;
 }
-div.slick-active {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: 8px solid #fff !important;
+@media screen and (min-width: 500px) {
+  div.slick-active {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 8px solid #fff !important;
+  }
+}
+.footer-inner-wrapper {
+  text-shadow: 2px 2px #000000d1
 }
 
 /*# sourceMappingURL=style.css.map */
