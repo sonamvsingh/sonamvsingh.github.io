@@ -893,7 +893,7 @@ form label {
   padding: 15px 20px;
   background: #fff !important;
   color: #F14E95;
-  border: none !important;
+  /*border: none !important;*/
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -1441,7 +1441,7 @@ form label {
   position: absolute;
   z-index: 1901;
   width: 270px;
-  background: black;
+  background: #ee68aa;
   top: 0;
   right: 0;
   top: 0;
@@ -1465,7 +1465,7 @@ form label {
   transform: translateX(0px);
 }
 #fh5co-offcanvas a {
-  color: rgba(255, 255, 255, 0.5);
+  color: #000000c9;
 }
 #fh5co-offcanvas a:hover {
   color: rgba(255, 255, 255, 0.8);
