@@ -1937,6 +1937,12 @@ form label {
     height: auto;
     border: 5px solid #fff !important;
   }
+  .slick-prev {
+    left: -15px !important;
+  }
+  .slick-next {
+    right: -15px !important;
+  }
 }
 .slick-prev:before {
   color: #F14E95 !important;
