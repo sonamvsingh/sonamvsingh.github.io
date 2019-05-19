@@ -15504,6 +15504,9 @@ form label {
     .slick-next {
         right: -15px !important
     }
+    #fh5co-logo img {
+        width: 30px !important;
+    }
 }
 
 .slick-prev:before {
@@ -15810,4 +15813,8 @@ form label {
 .slick-dots li.slick-active button:before {
     opacity: .75;
     color: #000
+}
+
+#fh5co-logo img {
+    width: 100px;
 }
